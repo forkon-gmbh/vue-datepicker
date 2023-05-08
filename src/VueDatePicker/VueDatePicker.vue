@@ -357,7 +357,7 @@
     onClickOutside(
         dpMenuRef,
         inputRef,
-        props.onClickOutside ? () => props.onClickOutside(validateBeforeEmit) : closeMenu,
+        props.onClickOutside ? (e) => props.onClickOutside(validateBeforeEmit, e) : closeMenu,
     );
 
     defineExpose({

@@ -152,7 +152,7 @@ export const AllProps = {
     readonly: { type: Boolean as PropType<boolean>, default: false },
     inline: { type: Boolean as PropType<boolean>, default: false },
     textInput: { type: Boolean as PropType<boolean>, default: false },
-    onClickOutside: { type: Function as PropType<(validate: () => boolean) => void>, default: null },
+    onClickOutside: { type: Function as PropType<(validate: () => boolean, event: PointerEvent) => void>, default: null },
     noDisabledRange: { type: Boolean as PropType<boolean>, default: false },
     sixWeeks: { type: Boolean as PropType<boolean>, default: false },
 };
