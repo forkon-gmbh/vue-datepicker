@@ -460,12 +460,12 @@
         dpMenuRef.value?.switchView(view, instance);
     };
 
-    const clickOutside = (validateBeforeEmit: () => boolean) => {
-        if (defaultedConfig.value.onClickOutside) return defaultedConfig.value.onClickOutside(validateBeforeEmit);
+    const clickOutside = (validateBeforeEmit: () => boolean, e: PointerEvent) => {
+        if (defaultedConfig.value.onClickOutside) return defaultedConfig.value.onClickOutside(validateBeforeEmit, e);
         return closeMenu();
     };
 
-    onClickOutside(dpWrapMenuRef, inputRef, () => clickOutside(validateBeforeEmit));
+    onClickOutside(dpWrapMenuRef, inputRef, e => clickOutside(validateBeforeEmit, e));
 
     defineExpose({
         closeMenu,

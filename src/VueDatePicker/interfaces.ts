@@ -292,7 +292,7 @@ export interface Config {
     closeOnAutoApply: boolean;
     noSwipe: boolean;
     keepActionRow: boolean;
-    onClickOutside?: (validate: () => boolean) => void;
+    onClickOutside?: (validate: () => boolean, e: PointerEvent) => void;
 }
 
 export interface Highlight {
