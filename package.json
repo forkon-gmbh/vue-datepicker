@@ -1,6 +1,6 @@
 {
   "name": "@forkon-gmbh/vue-datepicker",
-  "version": "7.2.0",
+  "version": "7.2.1",
   "description": "Datepicker component for Vue 3",
   "author": "Vuepic",
   "private": false,
